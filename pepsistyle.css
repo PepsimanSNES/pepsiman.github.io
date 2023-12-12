@@ -1,0 +1,53 @@
+p {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.start {
+    animation: shake 2s;
+    animation-iteration-count: infinite; 
+    margin-top: 65x;
+    font-size: 30px;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  @keyframes blinkingBackground{
+    0%		{ background-color: #10c018;}
+    25%		{ background-color: #1056c0;}
+    50%		{ background-color: #ef0a1a;}
+    75%		{ background-color: #254878;}
+    100%	{ background-color: #04a1d5;}
+}
+
+.ted {
+    transform: scaleX(-1);
+    width: 70%;
+}
+
+.oil {
+    animation: blinkingBackground 2s infinite;
+    font-size: 20px;
+    position: absolute;
+    bottom: 150px;
+    right: 50%;
+}
